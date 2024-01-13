@@ -13,6 +13,10 @@ module.exports = {
       colors: {
         'special-black': '#111111',
         'special-gray': '#1D1D1D'
+      },
+      fontFamily: {
+        'orbiton': ['Orbitron', 'sans-serif'],
+        'lexend': ['Lexend', 'sans-serif']
       }
     },
   },
