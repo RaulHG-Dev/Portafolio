@@ -106,7 +106,7 @@ export default function Resume({listEducation, listCourses, listExperiencies, co
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const urlEducation      = `${process.env.API_URL}/educaciones?fields[0]=periodo&fields[1]=lugar&fields[2]=tipo_certificacion`;
   const urlCourses        = `${process.env.API_URL}/cursos?fields[0]=plataforma&fields[1]=nombre_curso&fields[2]=tipo_certificacion&fields[3]=url_certificado`;
   const urlExperiences    = `${process.env.API_URL}/experiencias?fields[0]=periodo&fields[1]=empresa&fields[2]=puesto&fields[3]=descripcion_labores`;

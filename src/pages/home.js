@@ -14,7 +14,7 @@ export default function Home({contentAboutMe}) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const urlContentAboutMe = `${process.env.API_URL}/texto-contenidos?fields[0]=contenido&fields[1]=seccion&filters[seccion][$eq]=ABOUT_ME`;
 
   const [resAboutMe] = await Promise.all([
